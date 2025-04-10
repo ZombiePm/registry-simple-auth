@@ -1,0 +1,7 @@
+services:
+  registry:
+    image: registry
+    container_name: registry
+    volumes:
+      - ./registry-data/registry:/var/lib/registry
+      - ./registry-data/distribution:/etc/distribution
